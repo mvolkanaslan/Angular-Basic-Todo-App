@@ -1,0 +1,7 @@
+<form [formGroup]='todoForm'>
+    <div class="input-group input-group-lg mb-2">
+        <input type="text" class="form-control" placeholder="Add Todo" formControlName='title'>
+        <span class="input-group-text" style="cursor: pointer;" id="basic-addon2" (click)="addTodo()"><i
+                class="fas fa-plus fa-lg"></i></span>
+    </div>
+</form>

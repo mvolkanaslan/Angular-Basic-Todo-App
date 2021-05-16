@@ -1,0 +1,5 @@
+<div class="header {{today.getHours()<20&&today.getHours()>6?'day':'night'}}">
+    <span class="user">Hi Volkan !</span>
+    <span id="date" class="date">{{today | date :'EEEE, MMMM d'}}</span>
+    <fa-icon (click)="clearTodoList()" class="clearIcon" [icon]="faSyncAlt"></fa-icon>
+</div>

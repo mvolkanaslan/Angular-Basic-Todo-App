@@ -1,0 +1,14 @@
+<div class="card mb-2 ">
+    <div class="card-header d-flex justify-content-between">
+        <i class="complate far {{todo.complated?'fa-check-circle':'fa-circle'}}" (click)="complateTodo(todo)"></i>
+        <span (click)="toggleTodoBody()"
+            class="todoTitle {{todo.complated?'completedTodoTitle':''}}">{{todo.title}}</span>
+        <i class="delete fas fa-trash-alt" (click)="deleteTodo(todo)"></i>
+    </div>
+    <div class="card-body col-md-12 col-sm-12 col-lg-10" *ngIf="todoBodyToggle">
+        <p class="mb-1 d-flex justify-content-between"><span>Added Date </span><span>{{todo.createdDate}}</span> </p>
+        <p *ngIf='todo.complated' class="mb-1 d-flex justify-content-between"><span>Complated Date
+            </span><span>{{todo.complatedDate}}</span>
+        </p>
+    </div>
+</div>
