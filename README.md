@@ -1,4 +1,5 @@
 # AngularTodoApp
+<img src="https://github.com/mvolkanaslan/Angular-Basic-Todo-App/blob/master/todo-app-angular.png" alt="Girl in a jacket" width="50%" >
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
